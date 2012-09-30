@@ -8,7 +8,7 @@ class String
   end
 end
 
-class Aeonus
+class Aeonic
   def self.process(time)
 
     if time.isTimestamp?

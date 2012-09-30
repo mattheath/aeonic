@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'aeonic'
+puts Aeonic.process(ARGV[0])

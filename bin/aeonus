@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'aeonus'
-puts Aeonus.process(ARGV[0])
