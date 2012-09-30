@@ -11,6 +11,9 @@ end
 class Aeonic
   def self.process(time)
 
+    # Set a default if no parameter passed
+    time = "now" if time == nil
+
     # If the time specified is a timestamp, convert to a Time
     time = self.convertTimestampToDate(time) if time.isTimestamp?
 
