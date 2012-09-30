@@ -8,4 +8,5 @@ Gem::Specification.new do |s|
   s.email       = 'matt@heath.ly'
   s.files       = ["lib/aeonus.rb"]
   s.homepage    = 'http://github.com/mattheath/aeonus'
+  s.executables << 'aeonus'
 end
