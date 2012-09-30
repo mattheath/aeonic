@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'aeonic'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2010-09-30'
   s.summary     = "Aeonic"
   s.description = "Manipulator of Time"

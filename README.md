@@ -1,6 +1,12 @@
 Aeonic is a command line date/time wrapper for Chronic, which allows natural language parsing of times and dates.
 
-Usage:
+### Installation ###
+
+`gem install aeonic`
+
+This will install globally, and insert the aeonic executable into your path.
+
+### Usage ###
 
 Give *aeonic* a time or date, and the date, time and unix timestamp are returned.
 
