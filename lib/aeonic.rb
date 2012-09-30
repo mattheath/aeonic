@@ -19,7 +19,7 @@ class Aeonic
 
     # Parse with chronic, and output the date and a unix timestamp
     parsed = Chronic.parse(time)
-    puts "#{parsed} : " << (parsed.to_time.to_i.to_s)
+    puts "#{parsed} : " << (parsed.to_time.to_i.to_s) if parsed != nil
 
   end
 
