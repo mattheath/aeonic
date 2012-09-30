@@ -1,4 +1,5 @@
 require 'date'
+require 'chronic'
 
 # Extend string class to test input
 class String
@@ -9,11 +10,22 @@ end
 
 class Aeonus
   def self.process(time)
-    puts self.convertTimestampToDate(time) if time.isTimestamp?
+
+    if time.isTimestamp?
+      # If the time specified is a timestamp, output a human formatted date
+      puts self.convertTimestampToDate(time)
+    else
+      # Otherwise parse with chronic, and output the date and a unix timestamp
+      parsed = Chronic.parse(time)
+      puts "#{parsed} : " << (parsed.to_time.to_i.to_s)
+    end
+
   end
 
+  private
+
   def self.convertTimestampToDate(time)
-    DateTime.strptime(time,'%s')
+    Time.strptime(time,'%s')
   end
 
 end
